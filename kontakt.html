@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pogotowie komputerowe</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body>
+    <section id="main">
+
+        <div class="main-container">
+            <img src="animacja.gif" alt="animacja">
+        </div>
+        <div class="menu">
+            <a href="index.html">O nas</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+        <div class="content">
+            <div class="column">
+                <h2>Kim jesteśmy?</h2>
+                <p>Jesteśmy firmą z doświadczeniem w zakresie IT</p>
+            </div>
+            <div class="column">
+                <h3>Formularz kontaktowy</h3>
+                <form action="POST">
+                    <label for="name">Imię:</label><input class="form-input" type="text" id="name">
+                    <label for="surname">Nazwisko:</label><input class="form-input" type="text" id="surname">
+                    <label for="email">E-mail:</label><input class="form-input" type="email" id="email">
+                    <label for="service">Usługa:</label><select class="form-input" name="services" id="service">
+                        <optgroup>
+                            <option value="naprawa komputera">naprawa komputera</option>
+                            <option value="odzyskiwanie danych">odzyskiwanie danych</option>
+                            <option value="problemy z oprogramowaniem">problemy z oprogramowaniem</option>
+                            <option value="konfiguracja sieci LAN">konfiguracja sieci LAN</option>
+                            <option value="inne">inne</option>
+                        </optgroup>
+                    </select>
+                    <div class="inner-form">
+
+                        <input type="checkbox" id="check"> Wyślij kopie wiadomości
+                    </div>
+                    
+                </form>
+                <button id="reset">Resetuj</button>
+                <button id="send">Prześlij</button>
+                <p id="result"></p>
+            </div>
+            <div class="column">
+                <h2>Co nas cechuje?</h2>
+                Doświadczenie, niezawodność, konkurencyjne ceny.
+            </div>
+        </div>
+        <footer>Autor strony:Michał Oleś</footer>
+    </section>
+
+    <script src="skrypt.js"></script>
+</body>
+</html>
